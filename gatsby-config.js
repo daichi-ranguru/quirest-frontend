@@ -38,27 +38,5 @@ module.exports = {
      },
    },
    'gatsby-plugin-offline',
-   {
-    resolve: '@stackbit/gatsby-plugin-menus',
-    options: {
-      menus: {
-        main:
-          [
-            {
-              identifier: 'id',
-              title: 'title',
-              url: '/page-1/',
-              weight: 1
-            }
-          ]
-        ]
-      },
-      sourceNodeType: 'MarkdownRemark',
-      sourceDataPath: 'frontmatter',
-      sourceUrlPath: 'fields.url',
-      menuLoader: customLoaderFunction,
-      pageContextProperty: 'menus',
-    },
-  },
  ],
 }
