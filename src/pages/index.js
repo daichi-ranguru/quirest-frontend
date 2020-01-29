@@ -2,8 +2,8 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
-import ReactMarkdown from "react-markdown"
-import "../styles/global.css"  
+const ReactMarkdown = require('react-markdown')
+import "../styles/global.css"
 
 const IndexPage = ({ data }) => (
   <Layout>
