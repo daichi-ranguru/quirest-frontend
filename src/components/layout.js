@@ -22,19 +22,6 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  const menu_links = useStaticQuery(graphql`
-    query IndexQuery {
-      allStrapiArticle {
-        edges {
-          node {
-            id
-            title
-          }
-        }
-      }
-    }
-  `)
-  console.log(menu_links);
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
