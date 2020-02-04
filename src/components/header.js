@@ -35,7 +35,11 @@ const Header = ({ siteTitle }) => {
         <div>
           <nav>
             <ul style={{ display: "flex", flex: 1 }}>
-
+              <li key={siteTitle} style={{listStyleType: `none`,padding: `1rem`,}}>
+                <Link style={{ color: `white` }} to="/">
+                  Home
+                </Link>
+              </li>
               {data.allStrapiArticle.edges.map(link => (
 
                 <li
